@@ -1,0 +1,82 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1c1c;
+  padding: 15px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.nav .title {
+  font-size: 1.8rem;
+  color: #45f3ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav .title:hover {
+  color: #3ab2d9; 
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  margin-left: 30px;
+  position: relative;
+}
+
+/* Navbar links */
+.nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for links */
+.nav a:hover {
+  color: #45f3ff;
+  transition: color 0.3s ease;
+}
+
+/* Active link styling */
+.nav li.active a {
+  color: #45f3ff;
+  font-weight: bold;
+  border-bottom: 2px solid #45f3ff; /* Add a border below active link */
+}
+
+/* Responsive Design for Navbar */
+@media (max-width: 768px) {
+  .nav {
+    padding: 10px 20px; /* Adjust padding on smaller screens */
+  }
+
+  .nav .title {
+    font-size: 1.5rem;
+  }
+
+  .nav ul {
+    flex-direction: column; /* Stack links vertically */
+    align-items: center; /* Center links */
+  }
+
+  .nav li {
+    margin: 10px 0; /* Adjust margin between links */
+  }
+
+  .nav a {
+    font-size: 1rem;
+  }
+}

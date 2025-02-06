@@ -1,0 +1,105 @@
+/* PartyList Container */
+.party-list {
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* PartyList Header */
+.party-list h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* PartyList List */
+.party-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.party-list ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+  color: #444;
+  transition: all 0.3s ease;
+}
+
+.party-list ul li:last-child {
+  border-bottom: none;
+}
+
+/* PartyList Hover Effect */
+.party-list ul li:hover {
+  background-color: #f0f0f0;
+  transform: translateX(5px);
+  cursor: pointer;
+}
+
+/* Candidate Text */
+.party-list ul li span {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+/* Vote Button */
+.party-list button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Vote Button Hover */
+.party-list button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Vote Button Active */
+.party-list button:active {
+  background-color: #388e3c;
+  transform: scale(1);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .party-list {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  .party-list h2 {
+    font-size: 1.6rem;
+  }
+
+  .party-list ul li {
+    font-size: 0.95rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .party-list button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 12px;
+  }
+}

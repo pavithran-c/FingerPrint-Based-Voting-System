@@ -1,0 +1,67 @@
+/* Admin Dashboard Styles */
+.admin-container {
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: #f4f4f9;
+    min-height: 100vh;
+  }
+  
+  .admin-heading {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+  
+  .button-container {
+    display: grid;
+    gap: 25px;
+    width: 280px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .admin-button {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 500;
+  }
+  
+  .admin-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  .admin-button:focus {
+    outline: none;
+  }
+  
+  .admin-button:active {
+    background-color: #003d7a;
+    transform: scale(1); /* Removes zoom effect when clicked */
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .admin-heading {
+      font-size: 2rem;
+    }
+  
+    .button-container {
+      width: 80%;
+    }
+  
+    .admin-button {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  }
+  

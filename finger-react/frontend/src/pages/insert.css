@@ -1,0 +1,54 @@
+.insert-container {
+  font-family: Arial, sans-serif;
+  margin: 50px auto;
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.insert-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.insert-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.insert-container div {
+  margin-bottom: 15px;
+}
+
+.insert-container label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.insert-container input[type="text"],
+.insert-container input[type="date"],
+.insert-container input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.insert-container button {
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.insert-container button:hover {
+  background-color: #0056b3;
+}
